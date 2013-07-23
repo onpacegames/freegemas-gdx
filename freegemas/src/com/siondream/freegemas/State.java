@@ -61,12 +61,12 @@ public class State implements InputProcessor {
 	}
 
 	@Override
-	public boolean touchMoved(int arg0, int arg1) {
+	public boolean touchUp(int arg0, int arg1, int arg2, int arg3) {
 		return false;
 	}
-
+	
 	@Override
-	public boolean touchUp(int arg0, int arg1, int arg2, int arg3) {
+	public boolean mouseMoved(int screenX, int screenY) {
 		return false;
 	}
 
