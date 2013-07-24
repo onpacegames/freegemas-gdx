@@ -10,11 +10,12 @@ public class DesktopResolver implements PlatformResolver {
 	public String getDefaultLanguage() {
 		return java.util.Locale.getDefault().toString();
 	}
-	
+
+	@Override
 	public String format(String string, Object... args) {
 		return String.format(string, args);
 	}
-	
+
 	@Override
 	public BitmapFont loadFont(String fntFile, String ttfFile, int size) {
 		FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal(ttfFile));

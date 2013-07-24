@@ -5,11 +5,13 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 
 public class AndroidResolver implements PlatformResolver {
-	
+
+	@Override
 	public String getDefaultLanguage() {
 		return java.util.Locale.getDefault().toString();
 	}
-	
+
+	@Override
 	public String format(String string, Object... args) {
 		return String.format(string, args);
 	}

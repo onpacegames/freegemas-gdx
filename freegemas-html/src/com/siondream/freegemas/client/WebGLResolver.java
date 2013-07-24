@@ -10,7 +10,8 @@ public class WebGLResolver implements PlatformResolver {
 	public String getDefaultLanguage() {
 		return "en_UK";
 	}
-	
+
+	@Override
 	public String format(String string, Object... args) {
 		return "";
 	}
